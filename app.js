@@ -12,6 +12,10 @@ app.use(express.json())
 
 let refreshtokens=[]
 
+app.get('/',(req,res)=>{
+    res.send("Home page...").sendStatus(200)
+})
+
 app.get('/posts',authenticateToken,(req,res)=>{
     const users=JSON.parse(fs.readFileSync('users.json','utf-8'));
     res.json(users.filter(user=>user.name===req.user.name))
