@@ -1,0 +1,33 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuZGVlcCIsImlhdCI6MTYxMzY1NDYyMSwiZXhwIjoxNjEzNjU0OTIxfQ.LRJ6tR1Db2ivccrgVZJgIQhjO0LGqX0sd4HnSFKFWZQ
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+
+{
+    "username":"sandeep",
+    "password":"sandy"
+}
+
+###
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username":"sandeep",
+    "password":"sandy"
+}
+
+###
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuZGVlcCIsImlhdCI6MTYxMzY1MDQyNH0.6crkgEQzkCpDKtSUPR9oqNGXMJp1D8RGL9O-HHCbZn8"
+}
